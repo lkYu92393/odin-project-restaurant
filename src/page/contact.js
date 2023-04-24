@@ -1,22 +1,17 @@
 export default () => {
     const elem = document.getElementById("section-content");
+    const paragraphElem = (name, phone, email) => {
+        return `<div class="paragraph">
+        ${name}<br />
+        ${phone}<br />
+        ${email}
+    </div>`
+    }
     elem.innerHTML = 
     `<div id="contact">
         <div class="header">Contact Us</div>
-        <div class="paragraph">
-            Behemoth<br />
-            0000 0000<br />
-            behemoth@altesiaCafeteria
-        </div>
-        <div class="paragraph">
-            Beshemoth<br />
-            0000 1000<br />
-            beshemoth@altesiaCafeteria
-        </div>
-        <div class="paragraph">
-            Bedemoth<br />
-            1000 0000<br />
-            bedemoth@altesiaCafeteria
-        </div>
+        ${paragraphElem("Behemoth" , "0000 0000", "behemoth@altesiaCafeteria")}
+        ${paragraphElem("Beshemoth", "0000 1000", "beshemoth@altesiaCafeteria")}
+        ${paragraphElem("Bedemoth" , "1000 0000", "bedemoth@altesiaCafeteria")}
     </div>`
 }
