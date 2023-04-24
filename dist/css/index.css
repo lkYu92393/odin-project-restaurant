@@ -6,6 +6,7 @@
     box-sizing: content-box;
     --navbar-height: 40px;
 }
+body { font-family: Arial, sans-serif; }
 
 div#content {
     width: 100%;
